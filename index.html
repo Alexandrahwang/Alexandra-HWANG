@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra HWANG - Massages Bien-être et Sportif</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fff5f2;
+            color: #4a4a4a;
+        }
+        
+        header {
+            background-color: #f8d0c3;
+            text-align: center;
+            padding: 2rem;
+            color: #3a3a3a;
+            position: relative;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .service-section {
+            display: flex;
+            align-items: start;
+            margin-bottom: 3rem;
+            gap: 2rem;
+        }
+
+        .service-content {
+            flex: 2;
+        }
+
+        .service-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .circular-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .service-title {
+            color: #c17f6f;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .price-table {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 1rem;
+            border-collapse: collapse;
+        }
+        
+        .price-table td {
+            padding: 0.5rem;
+            border-bottom: 1px solid #f8d0c3;
+        }
+        
+        .contact {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .contact-info {
+            text-align: left;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .social-link {
+            color: #c17f6f;
+            text-decoration: none;
+        }
+        
+        .social-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #f8d0c3;
+            color: #3a3a3a;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        .leaf-decoration {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            opacity: 0.3;
+        }
+
+        .leaf-right {
+            right: 20px;
+            transform: rotate(45deg);
+        }
+
+        .leaf-left {
+            left: 20px;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Alexandra HWANG</h1>
+            <h2>MASSEUSE BIEN-ÊTRE ET SPORTIF</h2>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="service-section">
+            <div class="service-content">
+                <h3 class="service-title">Massage Californien</h3>
+                <p>Massage de relaxation profonde du corps et de l'esprit, il relâche les tensions accumulées. Il réduit le stress et l'anxiété et permet une amélioration de la circulation sanguine et élimine les toxines.</p>
+                <table class="price-table">
+                    <tr><td><strong>À Domicile</strong></td></tr>
+                    <tr><td>1H / 80€</td><td>1H30 / 120€</td></tr>
+                    <tr><td><strong>Espace massage au Cannet</strong></td></tr>
+                    <tr><td>1H / 70€</td><td>1H30 / 110€</td></tr>
+                </table>
+            </div>
+            <div class="service-images">
+                <img src="/api/placeholder/200/200" alt="Massage à l'huile" class="circular-image"/>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <h3 class="service-title">Massage Thaï à l'huile</h3>
+                <p>Massage qui apaise le mental. Il rééquilibre et relance l'énergie. Il Améliore le sommeil et la circulation sanguine. C'est un regain de vitalité</p>
+                <table class="price-table">
+                    <tr><td><strong>À Domicile</strong></td></tr>
+                    <tr><td>1H / 80€</td><td>1H30 / 120€</td></tr>
+                    <tr><td><strong>Espace massage au Cannet</strong></td></tr>
+                    <tr><td>1H / 70€</td><td>1H30 / 110€</td></tr>
+                </table>
+            </div>
+            <div class="service-images">
+                <img src="/api/placeholder/200/200" alt="Massage aux bougies" class="circular-image"/>
+            </div>
+        </section>
+
+        <section class="service-section">
+            <div class="service-content">
+                <h3 class="service-title">Massage deep tissue/sportif</h3>
+                <p>Massage qui traite les tensions profondes et chroniques. Il relâche les nœuds musculaires et les adhérences tissulaires. Il est efficace pour soulager les douleurs chroniques</p>
+                <table class="price-table">
+                    <tr><td><strong>À Domicile</strong></td></tr>
+                    <tr><td>1H / 90€</td><td>1H30 / 130€</td></tr>
+                    <tr><td><strong>Espace massage au Cannet</strong></td></tr>
+                    <tr><td>1H / 80€</td><td>1H30 / 140€</td></tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-info">
+                <h2>Contact et Réservations</h2>
+                <p>📞 06 89 46 42 18</p>
+                <p>📍 Le Cannet - 06110 (Mairie du Cannet)</p>
+                <p>
+                    <a href="https://www.instagram.com/alexandra_hwang_massages" class="social-link" target="_blank">
+                        Instagram: @alexandra_hwang_massages
+                    </a>
+                </p>
+            </div>
+            <img src="/api/placeholder/150/200" alt="Photo d'Alexandra HWANG" class="profile-image"/>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Alexandra HWANG - Massages Bien-être et Sportif</p>
+    </footer>
+</body>
+</html>
