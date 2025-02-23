@@ -18,190 +18,205 @@
         header {
             background: transparent;
             text-align: center;
-            padding: 2rem;
-            color: #3a3a3a;
-            position: relative;
+            padding: 1.5rem 1rem;
         }
 
-        .header-content {
-            position: relative;
-            z-index: 2;
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #3a3a3a;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+            color: #3a3a3a;
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 100%;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 1rem;
         }
         
-        .service-section {
-            display: flex;
-            align-items: start;
-            margin-bottom: 3rem;
-            gap: 2rem;
+        .service-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .service-content {
-            flex: 2;
-        }
-
-        .service-images {
-            flex: 1;
+        .service-header {
             display: flex;
-            flex-direction: column;
+            align-items: center;
             gap: 1rem;
+            margin-bottom: 1rem;
         }
         
-        .circular-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        .service-content {
+            flex-grow: 1;
         }
         
         .service-title {
             color: #c17f6f;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            margin: 0 0 0.5rem 0;
         }
         
-        .price-table {
-            width: 100%;
-            max-width: 400px;
-            margin-top: 1rem;
-            border-collapse: collapse;
+        .circular-image {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
         }
         
-        .price-table td {
-            padding: 0.5rem;
-            border-bottom: 1px solid #f8d0c3;
+        .description {
+            font-size: 0.95rem;
+            color: #666;
+            margin: 0;
         }
         
         .contact {
             background: white;
-            padding: 2rem;
+            padding: 1.5rem;
             border-radius: 12px;
             margin-top: 2rem;
             text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
-        .contact-info {
-            text-align: left;
+        .contact h2 {
+            color: #c17f6f;
+            margin-bottom: 1rem;
+        }
+
+        .contact p {
+            margin: 0.7rem 0;
+            font-size: 1rem;
         }
         
         .profile-image {
-            width: 150px;
-            height: 200px;
+            width: 120px;
+            height: 160px;
             object-fit: cover;
             border-radius: 8px;
+            margin: 1rem auto;
+            display: block;
         }
         
         .social-link {
             color: #c17f6f;
             text-decoration: none;
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
         }
-        
+
         .social-link:hover {
             text-decoration: underline;
         }
-
+        
         footer {
-            background: #f8d0c3;
-            color: #3a3a3a;
             text-align: center;
             padding: 1rem;
             margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #666;
         }
 
-        .leaf-decoration {
-            position: absolute;
-            width: 100px;
-            height: auto;
-            opacity: 0.3;
-        }
+        @media (min-width: 768px) {
+            .container {
+                max-width: 800px;
+                padding: 2rem;
+            }
 
-        .leaf-right {
-            right: 20px;
-            transform: rotate(45deg);
-        }
+            h1 {
+                font-size: 2.2rem;
+            }
 
-        .leaf-left {
-            left: 20px;
-            transform: rotate(-45deg);
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .service-card {
+                padding: 2rem;
+                margin-bottom: 2rem;
+            }
+
+            .circular-image {
+                width: 120px;
+                height: 120px;
+            }
+
+            .service-title {
+                font-size: 1.5rem;
+            }
+
+            .description {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>Alexandra HWANG</h1>
-            <h2>MASSEUSE BIEN-ÊTRE ET SPORTIF</h2>
-        </div>
+        <h1>Alexandra HWANG</h1>
+        <h2>MASSEUSE BIEN-ÊTRE ET SPORTIF</h2>
     </header>
 
     <div class="container">
-        <section class="service-section">
-            <div class="service-content">
-                <h3 class="service-title">Massage Californien</h3>
-                <p>Massage de relaxation profonde du corps et de l'esprit, il relâche les tensions accumulées. Il réduit le stress et l'anxiété et permet une amélioration de la circulation sanguine et élimine les toxines.</p>
-                <table class="price-table">
-                    <tr><td><strong>À Domicile</strong></td></tr>
-                    <tr><td>1H / 80€</td><td>1H30 / 120€</td></tr>
-                    <tr><td><strong>Espace massage au Cannet</strong></td></tr>
-                    <tr><td>1H / 70€</td><td>1H30 / 110€</td></tr>
-                </table>
+        <div class="service-card">
+            <div class="service-header">
+                <div class="service-content">
+                    <h3 class="service-title">Massage Californien</h3>
+                    <p class="description">
+                        Massage de relaxation profonde du corps et de l'esprit, il relâche les tensions accumulées. 
+                        Il réduit le stress et l'anxiété et permet une amélioration de la circulation sanguine et élimine les toxines.
+                    </p>
+                </div>
+                <img src="images/massage.jpg" alt="Massage à l'huile" class="circular-image"/>
             </div>
-            <div class="service-images">
-                <img src="images/lhuile.jpg" alt="Massage à l'huile" class="circular-image"/>
-            </div>
-        </section>
+        </div>
 
-        <section class="service-section">
-            <div class="service-content">
-                <h3 class="service-title">Massage Thaï à l'huile</h3>
-                <p>Massage qui apaise le mental. Il rééquilibre et relance l'énergie. Il Améliore le sommeil et la circulation sanguine. C'est un regain de vitalité</p>
-                <table class="price-table">
-                    <tr><td><strong>À Domicile</strong></td></tr>
-                    <tr><td>1H / 80€</td><td>1H30 / 120€</td></tr>
-                    <tr><td><strong>Espace massage au Cannet</strong></td></tr>
-                    <tr><td>1H / 70€</td><td>1H30 / 110€</td></tr>
-                </table>
+        <div class="service-card">
+            <div class="service-header">
+                <div class="service-content">
+                    <h3 class="service-title">Massage Thaï à l'huile</h3>
+                    <p class="description">
+                        Massage qui apaise le mental. Il rééquilibre et relance l'énergie. 
+                        Il Améliore le sommeil et la circulation sanguine. C'est un regain de vitalité.
+                    </p>
+                </div>
+                <img src="images/lhuile" alt="Massage aux bougies" class="circular-image"/>
             </div>
-            <div class="service-images">
-                <img src="images/massage.jpg" alt="Massage aux bougies" class="circular-image"/>
-            </div>
-        </section>
+        </div>
 
-        <section class="service-section">
-            <div class="service-content">
-                <h3 class="service-title">Massage deep tissue/sportif</h3>
-                <p>Massage qui traite les tensions profondes et chroniques. Il relâche les nœuds musculaires et les adhérences tissulaires. Il est efficace pour soulager les douleurs chroniques</p>
-                <table class="price-table">
-                    <tr><td><strong>À Domicile</strong></td></tr>
-                    <tr><td>1H / 90€</td><td>1H30 / 130€</td></tr>
-                    <tr><td><strong>Espace massage au Cannet</strong></td></tr>
-                    <tr><td>1H / 80€</td><td>1H30 / 140€</td></tr>
-                </table>
+        <div class="service-card">
+            <div class="service-header">
+                <div class="service-content">
+                    <h3 class="service-title">Massage deep tissue/sportif</h3>
+                    <p class="description">
+                        Massage qui traite les tensions profondes et chroniques. 
+                        Il relâche les nœuds musculaires et les adhérences tissulaires. 
+                        Il est efficace pour soulager les douleurs chroniques.
+                    </p>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section class="contact">
-            <div class="contact-info">
-                <h2>Contact et Réservations</h2>
-                <p>📞 06 89 46 42 18</p>
-                <p>📍 Le Cannet - 06110 (Mairie du Cannet)</p>
-                <p>
-                    <a href="https://www.instagram.com/alexandra_hwang_massages" class="social-link" target="_blank">
-                        Instagram: @alexandra_hwang_massages
-                    </a>
-                </p>
-            </div>
-            <img src="/api/placeholder/150/200" alt="Photo d'Alexandra HWANG" class="profile-image"/>
-        </section>
+        <div class="contact">
+            <h2>Contact et Réservations</h2>
+            <p>📞 06 89 46 42 18</p>
+            <p>📍 Le Cannet - 06110 (Mairie du Cannet)</p>
+            <img src="images/3.jpg" alt="Photo d'Alexandra HWANG" class="profile-image"/>
+            <p>
+                <a href="https://www.instagram.com/alexandra_hwang_massages" class="social-link" target="_blank">
+                    Instagram: @alexandra_hwang_massages
+                </a>
+            </p>
+        </div>
     </div>
 
     <footer>
